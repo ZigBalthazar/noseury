@@ -1,6 +1,7 @@
 # noseury | Nostr Express API
 
-A simple Express.js server that connects to a Nostr relay via WebSocket and returns matching events based on filters. Designed to be deployed using Docker.
+A simple Express.js server that connects to a Nostr relay via WebSocket and returns matching events based on filters.
+Designed to be deployed using Docker.
 
 ## Features
 
@@ -71,8 +72,8 @@ GET http://localhost:3000/nostr-events?relay=wss://relay.nostr.example&filters=[
 ### Build and run with Docker:
 
 ```bash
-docker build -t nostr-express-api .
-docker run -p 3000:3000 nostr-express-api
+docker build -t noseury .
+docker run -p 3000:3000 noseury
 ```
 
 ### Or use Docker Compose:
